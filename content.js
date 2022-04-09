@@ -174,7 +174,7 @@ function main() {
         });
 
         var buttonContainer = e.querySelector(
-          "div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)"
+          "div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)"
         );
         if (
           buttonContainer &&
@@ -308,13 +308,13 @@ function addCopyThreadButton(element) {
   // If the button container is currently hidden, we want to unhide it, and remove the Following button (as that's not required when the room is set to "Always Notify")
   // eLNT1d appears to be the class used to hide elements
   var buttonContainer = element.querySelector(
-    "div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)"
+    "div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)"
   );
 
   if (buttonContainer) {
     buttonContainer.style = "";
     var buttonContainer1 = element.querySelector(
-      "div:nth-of-type(2) > div:nth-of-type(1)"
+      "div:nth-of-type(3) > div:nth-of-type(1)"
     );
     if (buttonContainer1 && buttonContainer1.classList.contains("eLNT1d")) {
       buttonContainer1.classList.remove("eLNT1d");
